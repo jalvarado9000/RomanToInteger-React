@@ -1,0 +1,179 @@
+<!-- HTML form -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../css/normalize.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Roman Calculator</title>
+  
+</head>
+
+<body>
+
+  
+
+
+  <div class="container">
+    <div class="gx-5">
+
+      <div class="btn-group w-100" role="group">
+        <button class="btn btn-primary">Home</button>
+        <button class="btn btn-secondary">Roman</button>
+        <button class="btn btn-primary">Number</button>
+      </div>
+
+
+      
+      
+     
+
+
+      <div class=" col-fluid container text-center">
+        <div class="p-3">
+          <img src="../images/roman-number-table.webp" alt="roman to number" class="img-fluid">
+        </div><!--TEXTCENTER-->
+      </div><!--COL-12-->
+    
+
+   
+    
+
+   <div class="container row">
+
+   
+
+    <div class="col-12 col-md-6  mb-2">
+
+        
+      <form id ="myForm" class="form-inline mb-2">
+        <fieldset>
+        <legend class="h6">Calculate</legend>
+        <label class="h6" for="romanInput">Roman numeral:</label>
+        <input  type="text" id="romanInput" class="form-control mb-2 mr-sm-2 d-inline"  name="roman">
+        <div class="d-grid vstack gap-3"> 
+        <button type="submit" class="btn btn-primary mb-1">Submit</button>
+      </div>
+      </form>
+    </div>
+
+  
+ 
+    <div class="col-12 col-md-6  mb-2">
+      <form id ="myForm2" class="form-inline">
+    <fieldset>
+    <legend class="h6 ">Get Result</legend>
+    <label class="h6" for="id">Enter ID of Result:</label>
+    <input type="number" id="id" class="form-control mb-2 mr-sm-2 d-inline"  name="id">
+    <div class="d-grid vstack gap-3"> 
+      <button type="submit" class="btn btn-primary mb-1">Submit</button>
+    </div>
+  </fieldset>
+  <div id="result"></div>
+  </form>
+  </div>
+
+
+
+   
+ 
+<!--DOES NOT WORK-->
+<div class="col-12">
+  <form id = "updateMyForm" class="form-inline">
+    <fieldset >
+     <legend class="h6">To Update</legend>
+     <label class="h6" for="id-update">Enter ID </label>
+     <input type="number" id="id-update" name="id-update" class="form-control mb-2 mr-sm-2 d-inline" min="1">
+
+     
+     <label class="h6" for="roman-update">Roman Number</label>
+     <input type="text" id="roman-update" name="roman-update" class="form-control mb-2 mr-sm-2 d-inline">
+     <div class="d-grid vstack gap-3"> 
+      <button type="submit" class="btn btn-primary mb-1">Submit</button>
+     </div>
+   </fieldset>
+   <div id="result-updated"></div>
+   </form>
+</div>
+  
+
+
+
+
+  
+
+    <div class="col-12 col-md-6 mb-2 mt-3">
+      <form id = "deleteForm" class="form-inline">
+        <fieldset>
+        <legend class="h6">To Delete </legend>
+        <label class="h6" for="id-delete">Enter ID of Result:</label>
+        <input type="number" id="id-delete" name="id-delete" class="form-control mb-2 mr-sm-2 d-inline" required>
+        <div class="d-grid vstack gap-3"> 
+          <button type="submit" class="btn btn-primary mb-1">Submit</button>
+        </div>
+      </fieldset>
+      <div id="result2"></div>
+      </form>
+    </div>
+  
+      
+
+
+
+    
+
+
+    
+      <div class="col-12 col-md-6 mt-3">
+
+        <table class="table table-dark p-3">
+      
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Roman</th>
+              <th scope="col">Conversion</th>
+            </tr>
+          </thead>
+          <tbody id="roman-values"></tbody>
+        </table>
+ 
+      
+     </div>
+
+     
+
+
+</div><!--ROW-->
+
+</div>
+  </div><!--CONTAINER-->
+
+
+
+
+
+
+
+</body>
+
+
+<script src="../javascript/bootstrap.bundle.min.js"></script>
+<script src="../javascript/fetch.js"></script>
+
+
+  
+
+
+
+
+</html>
+  
